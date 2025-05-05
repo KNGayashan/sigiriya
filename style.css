@@ -71,7 +71,7 @@ header {
 
 .hero_text {
      position: absolute;
-     top: 25%;
+     bottom: 45%;
      font-size: 225px;
 }
 
@@ -121,6 +121,30 @@ header {
      }
 
      .hero_section {
+          height: 100vh;
+     }
+
+     .hero_section img {
+          bottom: 0;
+          top: auto; /* Disable top positioning */
+          width: 100%;
+          pointer-events: none;
+          position: absolute;
+     }
+
+     .hero_text {
+          position: absolute;
+          bottom: 45%;
+          font-size: 175px;
+     }
+}
+
+@media screen and (max-width: 768px) {
+     header {
+          padding: 10px;
+     }
+
+     .hero_section {
           height: 90vh;
      }
 
@@ -134,12 +158,12 @@ header {
 
      .hero_text {
           position: absolute;
-          top: 25%;
-          font-size: 175px;
+          bottom: 35%;
+          font-size: 100px;
      }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
      header {
           padding: 10px;
      }
@@ -158,31 +182,7 @@ header {
 
      .hero_text {
           position: absolute;
-          top: 25%;
-          font-size: 75px;
-     }
-}
-
-@media screen and (max-width: 480px) {
-     header {
-          padding: 10px;
-     }
-
-     .hero_section {
-          height: 40vh;
-     }
-
-     .hero_section img {
-          bottom: 0;
-          top: auto; /* Disable top positioning */
-          width: 100%;
-          pointer-events: none;
-          position: absolute;
-     }
-
-     .hero_text {
-          position: absolute;
-          top: 45%;
+          bottom: 35%;
           font-size: 50px;
      }
 }
